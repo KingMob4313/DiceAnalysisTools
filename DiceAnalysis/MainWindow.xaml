@@ -1,0 +1,36 @@
+﻿<Window x:Class="DiceAnalysis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiceAnalysis"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl HorizontalAlignment="Left"  Height="309" VerticalAlignment="Top" Width="525">
+            <TabItem Header="DD Character Dice">
+                <Grid Background="#FFE5E5E5" Margin="0,0,6,-13" Height="294" VerticalAlignment="Top">
+                    <Label Content="Dice Config:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                    <ComboBox x:Name="DiceConfigComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="89,14,0,0"/>
+                    <Button Content="Generate" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="383,14,0,0" Height="53" Click="Button_Click"/>
+                    <Label Content="1000s of Rolls:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,42,0,0"/>
+                    <TextBox x:Name="DiceRollCountTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="50" MaxLength="5" VerticalAlignment="Top" Width="49" Margin="101,45,0,0"/>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Bonus vs Adv/Disadv">
+                <Grid Background="#FFE5E5E5" HorizontalAlignment="Left" Width="515" Margin="0,0,-14,-13"/>
+            </TabItem>
+        </TabControl>
+        <Label Content="Average Roll:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,96,0,0"/>
+        <Label Content="First Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,137,0,0"/>
+        <Label Content="Second Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,168,0,0"/>
+        <Label Content="Third Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,199,0,0"/>
+        <Label Content="Fourth Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="267,137,0,0"/>
+        <Label Content="Fifth Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="267,168,0,0"/>
+        <Label Content="Sixth Dice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="267,199,0,0"/>
+
+
+    </Grid>
+</Window>
